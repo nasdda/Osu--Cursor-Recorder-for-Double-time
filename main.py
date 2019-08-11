@@ -6,9 +6,6 @@ import sys
 #### r to record and z to start
 started = False
 
-def end():
-    sys.exit()
-
 def on_press(key):
     MR = MouseRecord()
     launch = Launcher()
@@ -19,8 +16,6 @@ def on_press(key):
             MR.run_thread()
             print('detected')
             started = True
-        if str(key.char) == 's' :
-            end()
         if str(key.char) == 'z' and not started:
             t.start()
             started = True
