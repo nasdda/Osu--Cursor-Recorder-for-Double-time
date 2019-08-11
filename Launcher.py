@@ -7,7 +7,6 @@ class Launcher:
         pass
 
     def run(self):
-        multiplier = 0.01/1.5
         with open(r'C:\MouseDatas\movement', 'r') as file:
             coords = file.read().splitlines()
             for coord in coords:
